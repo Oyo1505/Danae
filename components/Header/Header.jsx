@@ -1,10 +1,14 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Header = () => {
   return (
     <header>
       <nav>
-        <h4>DANAE.IO</h4>
+        <Link href={'/'}>
+          <a>DANAE.IO</a>
+        </Link>
+
         <div>
           <span>Atworks</span>
           <i>LOGO</i>

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { useContext, useEffect } from 'react'
-import Header from '../components/Header/Header'
+
 import { StoreContext } from '../utils/StoreProvider'
 import Main from './main'
 const Home = ({ items }) => {
@@ -11,7 +11,7 @@ const Home = ({ items }) => {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
+
       <Main items={items} />
     </>
   )
