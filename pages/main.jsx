@@ -5,7 +5,7 @@ import ItemInSale from '../components/ItemInSale/ItemInSale'
 
 const Main = ({ items }) => {
   return (
-    <div>
+    <div className="flex flex-col">
       <ItemInSale itemInSale={items[1]} />
       <hr />
       <ListItems items={items} />

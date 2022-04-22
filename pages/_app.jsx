@@ -5,10 +5,14 @@ import Header from '../components/Header/Header'
 function MyApp({ Component, pageProps: { ...pageProps } }) {
   return (
     <>
-      <StoreProviderWrapper>
-        <Header />
-        <Component {...pageProps} />
-      </StoreProviderWrapper>
+      <div className="min-h-screen bg-zinc-900 font-sans text-white">
+        <StoreProviderWrapper>
+          <Header />
+          <div className="p-20 ">
+            <Component {...pageProps} />
+          </div>
+        </StoreProviderWrapper>
+      </div>
     </>
   )
 }

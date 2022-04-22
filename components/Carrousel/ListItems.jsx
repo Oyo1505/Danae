@@ -23,13 +23,13 @@ const responsive = {
 }
 const ListItems = ({ items }) => {
   return (
-    <>
+    <div className=" p-20 ">
       <Carousel responsive={responsive}>
         {items.map((item) => (
           <Item key={item.id} item={item} />
         ))}
       </Carousel>
-    </>
+    </div>
   )
 }
 
