@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext } from 'react'
 import { StoreContext } from '../../utils/StoreProvider'
 import DisplayTimeSingle from './DisplayTimeSingle'
 

@@ -1,15 +1,19 @@
 import React, { createContext, useEffect, useState } from 'react'
 
 const StoreContext = createContext()
+
 function StoreProviderWrapper(props) {
-  const { startingMinutes = 0, startingSeconds = 5 } = props
-  const { startingMinutesInSale = 0, startingSecondsInSale = 5 } = props
+  const { startingMinutes = 1, startingSeconds = 30 } = props
   const [mins, setMinutes] = useState(startingMinutes)
   const [secs, setSeconds] = useState(startingSeconds)
+
+  const { startingMinutesInSale = 1, startingSecondsInSale = 30 } = props
   const [minsSold, setMinutesSold] = useState(startingMinutesInSale)
   const [secsSold, setSecondsSold] = useState(startingSecondsInSale)
+
   const [inSale, setInSale] = useState(false)
   const [sold, setSold] = useState(false)
+
   //TIMER BEFORE TO BE SOLD
   useEffect(() => {
     if (!inSale) {

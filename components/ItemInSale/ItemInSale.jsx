@@ -1,7 +1,6 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import TimerHomePage from './TimerHomePage'
 import Image from 'next/image'
-import Link from 'next/link'
 import Title from './Title'
 const ItemInSale = ({ itemInSale }) => {
   return (

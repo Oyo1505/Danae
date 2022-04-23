@@ -1,7 +1,4 @@
 import Head from 'next/head'
-import { useContext, useEffect } from 'react'
-
-import { StoreContext } from '../utils/StoreProvider'
 import Main from './main'
 const Home = ({ items }) => {
   if (!items) return <p>Loading...</p>

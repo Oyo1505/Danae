@@ -1,6 +1,5 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext } from 'react'
 import { StoreContext } from '../../utils/StoreProvider'
-import DigitsHomePage from './DigitsHomePage'
 import DisplayTime from './DisplayTime'
 
 function TimerHomePage() {

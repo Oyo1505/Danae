@@ -1,5 +1,4 @@
 import React from 'react'
-import Carrousel from '../components/Carrousel/Carrousel'
 import ListItems from '../components/Carrousel/ListItems'
 import ItemInSale from '../components/ItemInSale/ItemInSale'
 
