@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import React from 'react'
 import { Card, CardMedia, CardContent } from '@mui/material'
 const Item = ({ item }) => {
