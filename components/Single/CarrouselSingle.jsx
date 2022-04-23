@@ -23,7 +23,7 @@ const responsive = {
 const CarrouselSingle = ({ pictures }) => {
   if (pictures.length === 0) return <p>Loading</p>
   if (pictures.length === 1)
-    return <Image src={pictures[0]} width={200} height={200} />
+    return <Image src={pictures[0]} width={990} height={670} />
   return (
     <>
       <Carousel
@@ -37,7 +37,7 @@ const CarrouselSingle = ({ pictures }) => {
         responsive={responsive}
       >
         {pictures.map((pic, i) => (
-          <Image key={i} src={pic} width={400} height={400} />
+          <Image key={i} src={pic} width={990} height={400} />
         ))}
       </Carousel>
     </>

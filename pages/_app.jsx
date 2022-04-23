@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps: { ...pageProps } }) {
       <div className="min-h-screen bg-zinc-900 font-sans text-white">
         <StoreProviderWrapper>
           <Header />
-          <div className="p-20 ">
+          <div className="h-full p-20">
             <Component {...pageProps} />
           </div>
         </StoreProviderWrapper>

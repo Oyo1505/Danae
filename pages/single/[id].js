@@ -10,18 +10,20 @@ const Single = ({ item }) => {
         `https://min-api.cryptocompare.com/data/pricemulti?fsyms=MATIC&tsyms=BTC,USD,EUR&api_key=${process.env.REACT_APP_CRYPTO}`
       )
       const data = await res.json()
-
       setPriceEuro(data.MATIC.EUR)
     }
     x()
   }, [])
 
   return (
-    <div>
-      <CarrouselSingle pictures={item.pictures} />
+    <div className="flex h-full flex-row items-center justify-items-stretch divide-x divide-zinc-700  ">
+      <div className="px-20">
+        <CarrouselSingle pictures={item.pictures} />
+      </div>
+
       <AsideContent
         title={item.title}
-        username={item.username}
+        username={item.artist.username}
         priceMatic={item.price}
         priceEuro={(item.price * priceEuro).toFixed(2)}
       />
