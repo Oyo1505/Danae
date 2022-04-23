@@ -8,7 +8,7 @@ const AsideContent = ({ title, username, priceMatic, priceEuro }) => {
   const { sold } = useContext(StoreContext)
   return (
     <div
-      className="flex  w-6/12	 flex-col items-center  justify-center justify-items-center px-20"
+      className="flex  w-4/12 flex-col items-center  justify-center justify-items-center px-20"
       style={{ height: '900px' }}
     >
       <Title username={username} title={title} />

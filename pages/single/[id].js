@@ -16,18 +16,19 @@ const Single = ({ item }) => {
   }, [])
 
   return (
-    <div className="flex h-full flex-row items-center justify-items-stretch divide-x divide-zinc-700  ">
-      <div className="px-20">
-        <CarrouselSingle pictures={item.pictures} />
+    <>
+      <div className="flex h-full flex-row items-center justify-items-stretch divide-x divide-zinc-700">
+        <div className="w-3/5 px-20">
+          <CarrouselSingle pictures={item.pictures} />
+        </div>
+        <AsideContent
+          title={item.title}
+          username={item.artist.username}
+          priceMatic={item.price}
+          priceEuro={(item.price * priceEuro).toFixed(2)}
+        />
       </div>
-
-      <AsideContent
-        title={item.title}
-        username={item.artist.username}
-        priceMatic={item.price}
-        priceEuro={(item.price * priceEuro).toFixed(2)}
-      />
-    </div>
+    </>
   )
 }
 export async function getStaticPaths() {
