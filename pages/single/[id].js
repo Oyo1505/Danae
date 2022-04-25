@@ -19,7 +19,7 @@ const Single = ({ item }) => {
     <>
       <div className="flex h-full flex-row items-center justify-items-stretch divide-x divide-zinc-700">
         <div className="w-3/5 px-20">
-          {item.pictures && <CarrouselSingle pictures={item.pictures} />}
+          <CarrouselSingle pictures={item.pictures} />
         </div>
         <AsideContent
           title={item.title}
